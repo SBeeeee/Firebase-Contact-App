@@ -10,8 +10,8 @@ const firebaseConfig = {
   authDomain: "vite-react-c768e.firebaseapp.com",
   projectId: "vite-react-c768e",
   storageBucket: "vite-react-c768e.appspot.com",
-  messagingSenderId: "100288967312",
-  appId: "1:100288967312:web:ca6e99dcb6eec1e3749e15"
+  messagingSenderId: // GET UR OWN CODES HERE
+  appId: 
 };
 
 // Initialize Firebase
