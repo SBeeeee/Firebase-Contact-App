@@ -16,7 +16,7 @@ function ContactCard({element}){
       console.log(error);
     }
   }
-    return(<>
+    return(<> 
     <div key={element.id} className="flex justify-between bg-amber-200 rounded-lg max-w-96 m-2">
         <RiContactsFill className="text-3xl"/><div><div className="text-2xl">{element.name}</div><div >{element.email}</div></div><FaRegEdit onClick={onOpen} className="text-3xl cursor-pointer" />
         <MdDelete onClick={()=>deletecontact(element.id)} className="text-3xl" />

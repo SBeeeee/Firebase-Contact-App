@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import NoContact from './components/NoContact';
 import ContactCard from './components/ContactCard';
 import Modal from './components/Modal';
 import { MdDelete } from "react-icons/md";
@@ -60,7 +61,15 @@ const filterContacts=(e)=>{
      <Navbar/>
      <Search onOpen={onOpen} filtercontacts={filterContacts}/>
      <div>
-      {contacts.map((element)=>(<ContactCard key={element.id} element={element}/>))}
+     <div>
+    {contacts.length > 0 ? (
+        contacts.map((element) => (
+            <ContactCard key={element.id} element={element} />
+        ))
+    ) : (
+        <NoContact />
+    )}
+</div>
     </div>
     </div>
    <AddandUpdateContac isopen={isopen} onClose={onClose}/>
